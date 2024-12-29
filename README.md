@@ -30,7 +30,6 @@ Test the website on different devices to ensure responsiveness.
 Technologies Used
 
 HTML: Provides the structure and content of the website.
-Key Features: Elements like <header>, <nav>, <section>, <footer>, forms, and links.
 CSS: Styles the layout and design of the website.
 JavaScript: Purpose: Adds interactivity to the website.
 Version Control: Git for version control and GitHub for hosting and managing code repositories.
