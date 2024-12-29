@@ -1,0 +1,134 @@
+/*html code*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+</header>
+<main>
+  <section id="about">
+    <h1>Welcome to My Portfolio</h1>
+    <p>  Hi! I'm R. Iffat, a dedicated and passionate web developer with a deep interest in crafting beautiful, functional, and user-friendly websites. I specialize in designing and developing web applications that not only look great but also provide seamless user experiences.</p>
+    <br>
+    <p>  With a strong foundation in modern web technologies, I enjoy working on both the frontend and backend of web projects. My goal is to bridge the gap between design and functionality, ensuring that every project I work on meets the highest standards of quality and performance.</p>
+      <br>  
+    <p>  Driven by curiosity and a desire to continuously learn, I stay up-to-date with the latest trends and tools in web development. Whether it's experimenting with new frameworks, optimizing website performance, or creating interactive features, I approach every challenge with enthusiasm and a problem-solving mindset.</p>
+       <br> 
+    <p>  Let’s create something amazing together!</p>
+  </section>
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>AUTOMATIC SMOKE DETECTION</h3>
+      <p>Automatic smoke detection uses advanced sensors and AI to identify smoke early, triggering alarms and sending alerts to prevent potential fires. It’s widely used in homes, commercial spaces, and industries, enhancing safety and enabling quick response through IoT integration and real-time monitoring systems.</p>
+    </div>
+    <div class="project">
+      <h3>FIRE FIGHTING ROBOT</h3>
+      <p>A Fire Fighting Robot is an autonomous or remotely controlled device designed to detect and extinguish fires. Equipped with sensors for smoke, heat, or flames, it navigates the environment to locate fire sources. It uses tools like water jets, CO2 extinguishers, or suppression systems to combat flames, ensuring safety in hazardous or inaccessible areas. Ideal for industrial, residential, and emergency applications, this project combines robotics, sensors, and AI to enhance fire safety and response..</p>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2024 R.Iffat. All rights reserved.</p>
+</footer>
+<script src="portfolio.js"></script>
+
+</body>
+</html>
+/*css*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  h1, h2{
+    background-color: cyan;
+  }
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  header .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  header .nav-links li {
+    margin: 0 10px;
+  }
+  header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  main {
+    padding: 1rem;
+  }
+  section {
+    margin-bottom: 2rem;
+  }
+  .project {
+    background: #f4f4f4;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    header .nav-links {
+      flex-direction: column;
+    }
+  }
+/*jss*/
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  });
+  
+  // Form Submit Handler
+  document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thank you for contacting me!');
+  });
+  
