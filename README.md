@@ -23,13 +23,19 @@ menu and multiple sections (About, Projects, Contact).
 Key Activities
 
 Structure the website using HTML elements such as sections, headers, footers, forms, and navigation links.
+
 Style the website using CSS Grid or Flexbox to create a responsive layout.
+
 Implement smooth scrolling when clicking navigation links.
+
 Test the website on different devices to ensure responsiveness.
 
 Technologies Used
 
 HTML: Provides the structure and content of the website.
+
 CSS: Styles the layout and design of the website.
+
 JavaScript: Purpose: Adds interactivity to the website.
+
 Version Control: Git for version control and GitHub for hosting and managing code repositories.
