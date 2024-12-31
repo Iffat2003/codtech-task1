@@ -8,8 +8,6 @@ Domain:FRONT END DEVELOPER
 
 Duration:DECEMBER 12TH,2024 TO FEBRUARY 26TH,2025
 
-Mentor: Neha
-
 Overview of the Project
 
 Project:PERSONAL PORTFOLIO WEBSITE
